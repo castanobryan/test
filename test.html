@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba Cámara</title>
+</head>
+<body>
+  <h2>Tomar Foto</h2>
+
+  <label for="cameraInput">
+    <button type="button" style="font-size: 18px;">📷 Tomar Foto</button>
+  </label>
+
+  <input 
+    type="file" 
+    id="cameraInput" 
+    accept="image/*" 
+    capture="environment" 
+    style="display:none;" 
+    onchange="alert('¡Foto seleccionada: ' + this.files[0].name)" />
+</body>
+</html>
